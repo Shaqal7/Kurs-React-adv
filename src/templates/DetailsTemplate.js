@@ -2,10 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import UserPageTemplate from './UserPageTemplate';
 
-const DetailsTemplate = () => (
+const DetailsTemplate = ({ children }) => (
   <UserPageTemplate>
-    <h1>Note</h1>
-    <p>lorem</p>
+    {children}
     <Link to="/">go back</Link>
   </UserPageTemplate>
 );
